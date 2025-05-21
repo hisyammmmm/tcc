@@ -11,13 +11,14 @@ const app = express();
 app.use(cookieParser());
 app.set("view engine", "ejs");
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
-app.get("/", (req, res) => res.render("index"));
-app.use(UserRoute);
-app.use(Route)
 
-const PORT = process.env.PORT || 5000;
+app.get("/", (req, res) => res.render("index")); // pastikan ada views/index.ejs
+app.use(UserRoute);
+app.use(Route);
+
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
