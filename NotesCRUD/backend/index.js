@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => res.render("index")); // pastikan ada views/index.ejs
+app.get("/", (req, res) => res.send("API is working")); // pastikan ada views/index.ejs
 app.use(UserRoute);
 app.use(Route);
 
