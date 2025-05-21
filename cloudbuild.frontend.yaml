@@ -7,7 +7,7 @@ steps:
       - deploy
       - app.yaml
       - '--quiet'
-    dir: 'tugas2/frontend'  # Ganti dengan direktori frontend yang berisi app.yaml dan file HTML kamu
+    dir: 'tugas2/frontend'
 
 options:
   logging: CLOUD_LOGGING_ONLY  # Opsional: hanya mencatat log ke Google Cloud Logging

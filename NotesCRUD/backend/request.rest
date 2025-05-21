@@ -1,0 +1,69 @@
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6ImliYW0iLCJlbWFpbCI6InRlc0B0ZXMuY29tIiwiY3JlYXRlZEF0IjoiMjAyNS0wNS0yMVQwNzo1NTo1NS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyNS0wNS0yMVQwNzo1NTo1NS4wMDBaIiwiaWF0IjoxNzQ3ODE0NzA3LCJleHAiOjE3NDc4MTY1MDd9.uFciVhjuWikOtCISomg_KDDC-yn_Qvwi1qS3_rhp6qo
+
+get http://localhost:5000/note
+
+###
+
+POST http://localhost:5000/tambah-note
+Content-Type: application/json
+
+{
+    "title": "cek",
+    "note": "cek"
+}
+
+###
+
+PUT http://localhost:5000/edit-note/2
+Content-Type: application/json
+
+{
+    "title": "gantiii",
+    "note": "uhuyy"
+}
+
+###
+DELETE http://localhost:5000/delete-note/1
+
+###
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/register 
+Content-Type: application/json
+
+{
+    "name": "ibams",
+    "email": "tes@tes.com",
+    "password": "123"
+}
+
+### 
+
+PUT http://localhost:5000/edit-user/1
+Content-Type: application/json
+
+{
+    "name": "tessss",
+    "email": "tesss@tessss.com",
+    "password": "Male"
+}
+
+###
+
+DELETE http://localhost:5000/delete-user/1
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+"name": "ibams",
+"password": "123"
+}
+
+###
+POST http://localhost:5000/logout
+
+Authorization: {{token}}
