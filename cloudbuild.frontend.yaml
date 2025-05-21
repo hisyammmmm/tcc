@@ -7,7 +7,7 @@ steps:
       - deploy
       - app.yaml
       - '--quiet'
-    dir: 'tugas2/frontend'
+    dir: 'NotesCRUD/frontend'
 
 options:
   logging: CLOUD_LOGGING_ONLY  # Opsional: hanya mencatat log ke Google Cloud Logging
