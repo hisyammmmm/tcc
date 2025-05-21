@@ -17,6 +17,7 @@ app.get("/", (req, res) => res.render("index"));
 app.use(UserRoute);
 app.use(Route)
 
-app.listen(5000, ()=> {
-    console.log("server is running");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
